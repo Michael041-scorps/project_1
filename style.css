@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #111;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: gold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+.hero {
+    min-height: 450px;
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #151515, #30230c);
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero span {
+    color: gold;
+}
+
+.hero h3 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: gold;
+    color: black;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section:not(.hero) {
+    padding: 70px 10%;
+}
+
+section h2 {
+    color: gold;
+    margin-bottom: 25px;
+}
+
+section p {
+    margin: 15px 0;
+    line-height: 1.7;
+}
+
+footer {
+    background: #111;
+    text-align: center;
+    padding: 25px;
+    color: gold;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
